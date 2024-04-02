@@ -8,10 +8,10 @@ type MenuItemProps = {
 export default function MenuItem({item, addItem}: MenuItemProps) {
   return (
     <button 
-    className="border-2 border-black p-4 hover:bg-purple-300"
+    className="border-2 border-black lg:px-2 md:px-10 md:py-2 hover:bg-purple-300 "
      onClick={() => addItem(item)}
     >
-    <p>{item.name}</p>
+    <p className="text-xs">{item.name}</p>
     </button>
   )
 }

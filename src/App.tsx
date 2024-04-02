@@ -9,14 +9,15 @@ function App() {
 
   return (
     <>
-      <header className="font-bold text-center bg-gradient-to-r from-purple-300 to-indigo-300 py-5">
-        <h1 className="text-center text-4xl font-bolder text-blue-950">
+    <div className="min-h-screen sm:justify-center items-center "> 
+      <div className="font-bold text-center bg-gradient-to-r from-purple-300 to-indigo-300 py-5">
+        <h1 className="text-center text-4xl font-bolder text-blue-950 sm:text-xs md:text-sm">
           New Music
         </h1>
-      </header>
-      <main className="max-w-7xl mx-auto text-center px-14 py-4">
-      <h2 className="text-4xl font-black">BINGO</h2>
-        <div className="grid grid-cols-5 lg:p-4 text-xs">
+        <h2 className="text-4xl font-black">BINGO</h2>
+      </div>
+      <div className="mt-6 mr-6 ml-6">
+        <div className="grid grid-cols-5 text-xs lg:px-64 md:px-46 sm:px-2 ">
           {menuItems.map(item => (
             <MenuItem
             key={item.name}
@@ -25,14 +26,17 @@ function App() {
             />
           ))}
         </div>
-        <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
+        <div className="border border-dashed bg-white border-slate-300 p-5 rounded-lg space-y-10">
           <OrderContents
            order={order}
           />
         </div>
-      </main>
+      </div>
+      </div>
     </>
   );
 }
 
 export default App;
+
+/* */
