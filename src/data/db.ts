@@ -1,5 +1,16 @@
 import type { MenuItem } from "../types";
 import itunes from "../assets/FaBrandsItunes.png"
+import tiktok from "../assets/AntDesignTikTokOutlined.png"
+import qobuz from "../assets/ArcticonsQobuz.png"
+import shazam from "../assets/CibShazam.png"
+import twitter from "../assets/Fa6BrandsSquareXTwitter.png"
+import fb from "../assets/LogosFacebook.png"
+import spotify from "../assets/LogosSpotifyIcon.png"
+import youtube from "../assets/LogosYoutubeIcon.png"
+import amazonmusic from "../assets/SimpleIconsAmazonmusic.png"
+import youtubemusic from "../assets/SimpleIconsYoutubemusic.png"
+//import ig from "../assets/SkillIconsInstagram.png"
+
 
 export const menuItems : MenuItem[] = [
   {
@@ -12,13 +23,13 @@ export const menuItems : MenuItem[] = [
     id: 2,
     name: "Like the music video",
     link: "https://www.youtube.com/watch?v=8Nx8gRpAvWA&list=PLXxIRFaXrEhYv99T-kmZoA7k974YeJt_S",
-    img: itunes,
+    img: youtube,
   },
   {
     id: 3,
     name: "Stream on Spotify",
     link: "https://open.spotify.com/intl-es/album/5mqxdPWQirLBE7vdDMhlB4",
-    img: itunes,
+    img: spotify,
   },
   {
     id: 4,
@@ -35,8 +46,8 @@ export const menuItems : MenuItem[] = [
   {
     id: 6,
     name: "Buy physical copies",
-    link: "https://shop.bts-official.us/pages/j-hope",
-    img: itunes,/*
+    img: itunes,
+    link: "https://shop.bts-official.us/pages/j-hope" , /*
     link1: "https://www.amazon.com/dp/B0CVLHPQ11",
     link2: "https://www.barnesandnoble.com/w/hope-on-the-street-vol1-j-hope/1144945370;jsessionid=D08392673F9B9AAB0F55ED397D0C8896.prodny_store01-atgap11?ean=0196922766701",
     link3: "https://www.barnesandnoble.com/w/hope-on-the-street-vol1-j-hope/1144945370;jsessionid=D08392673F9B9AAB0F55ED397D0C8896.prodny_store01-atgap11?ean=0196922766701",
@@ -48,13 +59,13 @@ export const menuItems : MenuItem[] = [
     id: 7,
     name: "Leave a thoughtful comment/replay on YouTube",
     link: "https://www.youtube.com/watch?v=8Nx8gRpAvWA&list=PLXxIRFaXrEhYv99T-kmZoA7k974YeJt_S",
-    img: itunes,
+    img: youtube,
   },
   {
     id: 8,
     name: "Promote on TikTok",
     link: "https://www.tiktok.com/@bts_official_bighit",
-    img: itunes,
+    img: tiktok,
   },
   {
     id: 9,
@@ -66,19 +77,19 @@ export const menuItems : MenuItem[] = [
     id: 10,
     name: "Buy on Qobuz",
     link: "https://www.qobuz.com/us-en/album/hope-on-the-street-vol1-j-hope/qtib05z7gzrnc",
-    img: itunes,
+    img: qobuz,
   },
   {
     id: 11,
     name: "Blast it in the car with the windows down",
     link: "https://open.spotify.com/playlist/37i9dQZF1DX9owDoKZZXV5",
-    img: itunes,
+    img: spotify,
   },
   {
     id: 12,
     name: "Hydrate",
     link: "https://open.spotify.com/playlist/37i9dQZF1DX9owDoKZZXV5",
-    img: itunes,
+    img: spotify,
   },
   {
     id: 13,
@@ -90,13 +101,13 @@ export const menuItems : MenuItem[] = [
     id: 14,
     name: "Steam on YouTube Music",
     link: "https://music.youtube.com/playlist?list=OLAK5uy_nUOVsjRj0t7D1f_eul3DtSvI9TQ6fRSWc",
-    img: itunes,
+    img: youtubemusic,
   },
   {
     id: 15,
     name: "Share streaming links on social media",
     link: "https://twitter.com/",
-    img: itunes,/*
+    img: twitter,/*
     link1: "https://www.instagram.com/",
     link2: "https://www.facebook.com/",
     link3: "https://www.tiktok.com/",*/
@@ -105,7 +116,7 @@ export const menuItems : MenuItem[] = [
     id: 16,
     name: "Buy digital version(s) on Amazon",
     link: "https://www.amazon.com/dp/B0CY6SZT5K",
-    img: itunes,
+    img: amazonmusic,
   },
   {
     id: 17,
@@ -117,19 +128,19 @@ export const menuItems : MenuItem[] = [
     id: 18,
     name: "Watch official music video on facebook",
     link: "https://www.facebook.com/bangtan.official/videos",
-    img: itunes,
+    img: fb,
   },
   {
     id: 19,
     name: "Share a playlist",
     link: "https://open.spotify.com/playlist/37i9dQZF1DX9owDoKZZXV5",
-    img: itunes,
+    img: spotify,
   },
   {
     id: 20,
     name: "Get a free trial of a premium app",
     link: "https://www.spotify.com/gt/premium/?ref=account_sam_explore_premium#plans",
-    img: itunes,/*
+    img: spotify,/*
     link1: "https://www.shazam.com/applemusic",
     link2: "https://music.amazon.es/",*/
   },
@@ -137,19 +148,19 @@ export const menuItems : MenuItem[] = [
     id: 21,
     name: "Shazam song(s)",
     link: "https://www.shazam.com/",
-    img: itunes,
+    img: shazam,
   },
   {
     id: 22,
     name: "Create a Spotify Playlist",
     link: "https://open.spotify.com/",
-    img: itunes,
+    img: spotify,
   },
   {
     id: 23,
     name: "Share the video on social media",
     link: "https://twitter.com/",
-    img: itunes,/*
+    img: twitter,/*
     link1: "https://www.instagram.com/",
     link2: "https://www.facebook.com/",
     link3: "https://www.tiktok.com/",*/
@@ -158,12 +169,12 @@ export const menuItems : MenuItem[] = [
     id: 24,
     name: "Stream on Amazon",
     link: "https://music.amazon.com/albums/B0CY6SZT5K",
-    img: itunes,
+    img: amazonmusic,
   },
   {
     id: 25,
     name: "Share your favorite lyric",
     link: "https://open.spotify.com/lyrics",
-    img: itunes,
+    img: spotify,
   },
-];
+]; 
