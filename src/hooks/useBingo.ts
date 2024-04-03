@@ -4,6 +4,7 @@ import type { MenuItem, OrderItem } from "../types";
 export default function useBingo() {
   const [order, setOrder] = useState<OrderItem[]>([]);
 
+
   const addItem = (item: MenuItem) => {
     const itemExist = order.find((orderItem) => orderItem.id === item.id);
     if (itemExist) {
@@ -18,8 +19,15 @@ export default function useBingo() {
       setOrder([...order, newItem]);
     }
   };
+
+  const removeItem = (id: MenuItem["id"]) => {
+    setOrder(order.filter( item => item.id !== id));
+  }
+
+
   return {
     order,
     addItem,
+    removeItem, 
   };
 }
