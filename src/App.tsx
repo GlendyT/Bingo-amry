@@ -1,11 +1,12 @@
+
 import MenuItem from "./components/MenuItem";
 import OrderContents from "./components/OrderContents";
 import { menuItems } from "./data/db";
-import useBingo from "./hooks/useBingo";
+
 
 function App() {
 
-  const { order, addItem }  = useBingo();
+
 
   return (
     <>
@@ -15,22 +16,29 @@ function App() {
           New Music
         </h1>
         <h2 className="text-4xl font-black">BINGO</h2>
+        <h1>Mark what you have already completed</h1>
       </div>
-      <div className="mt-6 mr-6 ml-6">
+      <div className=" mr-6 ml-6">
         <div className="grid grid-cols-5 text-xs lg:px-64 md:px-46 sm:px-2 ">
           {menuItems.map(item => (
             <MenuItem
             key={item.name}
-            item={item}
-            addItem={addItem}
+            item={item}  
             />
           ))}
+        </div> 
+        
+        <div className=" bg-white border-slate-300 p-5 rounded-lg space-y-1">
+        <h2 className="font-black text-2xl text-center "> You can complete your tasks in the links  below</h2>
+          {menuItems.map(item => (
+             <OrderContents
+            item={item} 
+            key={item.name}
+
+          />         
+          ))}
         </div>
-        <div className="border border-dashed bg-white border-slate-300 p-5 rounded-lg space-y-10">
-          <OrderContents
-           order={order}
-          />
-        </div>
+        
       </div>
       </div>
     </>
@@ -39,4 +47,5 @@ function App() {
 
 export default App;
 
-/* */
+
+

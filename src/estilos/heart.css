@@ -1,0 +1,37 @@
+.love {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    animation: beating 2s ease infinite;
+  }
+.love:before,
+.love:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(89, 24, 193);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.love:before {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+  @keyframes beating {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    50% {
+      transform: rotate(45deg) scale(2);
+    }
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+  }
