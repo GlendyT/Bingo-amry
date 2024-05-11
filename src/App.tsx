@@ -1,5 +1,5 @@
 
-import MenuItem from "./components/MenuItem";
+import BingoCard from "./components/BingoCard";
 import OrderContents from "./components/OrderContents";
 import { menuItems } from "./data/db";
 
@@ -21,7 +21,7 @@ function App() {
       <div className=" mr-6 ml-6">
         <div className="grid grid-cols-5 text-xs lg:px-64 md:px-46 sm:px-2 ">
           {menuItems.map(item => (
-            <MenuItem
+            <BingoCard
             key={item.name}
             item={item}  
             />

@@ -1,20 +1,18 @@
 
 import { useState } from "react"
-import {  MenuItem } from "../types"
+import { MenuItem } from "../types"
 
 type MenuItemProps = {
     item: MenuItem,
 
 }
 
-export default function MenuItem({item}: MenuItemProps) {
+export default function BingoCard({item}: MenuItemProps) {
   const [changeColor, setChangeColor] = useState(false)
 
   const handleClick = () => {
     setChangeColor(!changeColor)
   }
-
-
   return (
     
     <> 
