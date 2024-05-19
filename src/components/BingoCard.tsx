@@ -17,7 +17,7 @@ export default function BingoCard({ item }: MenuItemProps) {
     <>
 
         <button
-          className={`border-2 border-gray-800 px-8 max-sm:px-2 ${changeColor ? 'bg-purple-200 text-purple-900 font-semibold ' : 'bg-white-700'}`}
+          className={`border-2 border-gray-800 px-8 max-sm:px-2 ${changeColor ? 'bg-purple-200 text-purple-900 font-bold ' : 'bg-white-700'}`}
           onClick={handleClick}
         >
           <p className="text-xs">{item.name}</p>
