@@ -57,7 +57,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     id: 7,
-    name: "Leave a thoughtful comment/replay on YouTube",
+    name: "Leave a thoughtful comment on YouTube",
     link: [{name: "YouTube", url: "https://www.youtube.com/watch?v=8Nx8gRpAvWA&list=PLXxIRFaXrEhYv99T-kmZoA7k974YeJt_S"}],
     img: youtube,
   },
